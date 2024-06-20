@@ -42,7 +42,8 @@ fn get_model(event_ids: Vec<i32>, mut base_path: String, py: Python) -> Vec<&PyD
     buffer
 }
 
+#[pymodule]
 fn tiruka_oasis_risk_modeling(_py: Python, m: &PyModule) -> PyResult<()> {
-    m.add_wrapped(wrap_pyfunction!(get_model));
+    m.add_wrapped(wrap_pyfunction!(get_model)).unwrap();
     Ok(())
 }
