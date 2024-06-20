@@ -11,6 +11,6 @@ serde = { version = "1", features = ["derive"] }
 [lib]
 name = "tiruka_oasis_risk_modeling"
 crate-type = ["rlib", "cdylib"]
-[depndencies.pyo3]
+[dependencies.pyo3]
 version = "0.13.2"
 features = ["extension-module"]
