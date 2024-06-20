@@ -1,5 +1,5 @@
 import os
-from tiruka_oasis_risk_modeling import *
+from tiruka_oasis_risk_modeling.tiruka_oasis_risk_modeling import *
 
 
 def construct_model(event_ids):
